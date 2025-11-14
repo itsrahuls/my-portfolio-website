@@ -32,7 +32,7 @@ export default function Contact() {
         const data = await response.json()
         setStatus(data.message || 'Failed to send message')
       }
-    } catch (error) {
+    } catch {
       setStatus('Failed to send message')
     }
   }
