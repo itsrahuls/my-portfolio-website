@@ -47,7 +47,7 @@ export default function Contact() {
         >
           <h2 className="text-3xl font-bold mb-4 text-center">Get in Touch</h2>
           <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-center mb-8">
-            I'm always open to exploring new projects, innovative ideas, and opportunities where I can contribute and add value.
+            I&apos;m always open to exploring new projects, innovative ideas, and opportunities where I can contribute and add value.
           </p>
 
           <form onSubmit={handleSubmit}>

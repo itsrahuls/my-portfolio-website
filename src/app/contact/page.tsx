@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import { fadeInUp, fadeIn, slideInLeft, slideInRight } from '@/utils/animations'
+import { fadeInUp, staggerContainer, slideInLeft, slideInRight } from '@/utils/animations'
 
 interface FormData {
   name: string;
@@ -68,13 +68,13 @@ export default function Contact() {
           <motion.div {...fadeInUp}>
             <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
             <p className="text-secondary">
-             I'm always open to exploring new projects, innovative ideas, and opportunities where I can contribute and add value.
+             I&apos;m always open to exploring new projects, innovative ideas, and opportunities where I can contribute and add value.
             </p>
           </motion.div>
           
           <motion.div 
             className="space-y-4"
-            variants={fadeIn}
+            variants={staggerContainer}
             initial="initial"
             animate="animate"
           >
@@ -131,7 +131,7 @@ export default function Contact() {
           <motion.form 
             onSubmit={handleSubmit} 
             className="space-y-6"
-            variants={fadeIn}
+            variants={staggerContainer}
             initial="initial"
             animate="animate"
           >
